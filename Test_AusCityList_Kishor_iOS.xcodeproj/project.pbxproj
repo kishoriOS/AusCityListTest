@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5803344D2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803344C2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOSApp.swift */; };
+		5803344F2D64876D00AB62B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803344E2D64876D00AB62B9 /* ContentView.swift */; };
+		580334512D64876E00AB62B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580334502D64876E00AB62B9 /* Assets.xcassets */; };
+		580334542D64876E00AB62B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580334532D64876E00AB62B9 /* Preview Assets.xcassets */; };
+		580334562D64876E00AB62B9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580334552D64876E00AB62B9 /* Persistence.swift */; };
+		580334592D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 580334572D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodeld */; };
+		580334632D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580334622D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.swift */; };
+		5803346D2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803346C2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.swift */; };
+		5803346F2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803346E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift */; };
+		580334802D64890300AB62B9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5803347F2D64890300AB62B9 /* City.swift */; };
+		580334832D64895100AB62B9 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580334822D64895100AB62B9 /* CityRepository.swift */; };
+		580334852D64898A00AB62B9 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580334842D64898A00AB62B9 /* CityViewModel.swift */; };
+		580334872D6489B300AB62B9 /* CityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580334862D6489B300AB62B9 /* CityListView.swift */; };
+		5803348A2D648CEB00AB62B9 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 580334892D648CEB00AB62B9 /* cities.json */; };
+		589CD0262D649FF5008BC012 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589CD0252D649FF5008BC012 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5803345F2D64876E00AB62B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580334412D64876D00AB62B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580334482D64876D00AB62B9;
+			remoteInfo = Test_AusCityList_Kishor_iOS;
+		};
+		580334692D64876E00AB62B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580334412D64876D00AB62B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580334482D64876D00AB62B9;
+			remoteInfo = Test_AusCityList_Kishor_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		580334492D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_AusCityList_Kishor_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5803344C2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AusCityList_Kishor_iOSApp.swift; sourceTree = "<group>"; };
+		5803344E2D64876D00AB62B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		580334502D64876E00AB62B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580334532D64876E00AB62B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		580334552D64876E00AB62B9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		580334582D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test_AusCityList_Kishor_iOS.xcdatamodel; sourceTree = "<group>"; };
+		5803345E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AusCityList_Kishor_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580334622D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AusCityList_Kishor_iOSTests.swift; sourceTree = "<group>"; };
+		580334682D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_AusCityList_Kishor_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5803346C2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AusCityList_Kishor_iOSUITests.swift; sourceTree = "<group>"; };
+		5803346E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5803347F2D64890300AB62B9 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		580334822D64895100AB62B9 /* CityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
+		580334842D64898A00AB62B9 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		580334862D6489B300AB62B9 /* CityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListView.swift; sourceTree = "<group>"; };
+		580334892D648CEB00AB62B9 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		589CD0252D649FF5008BC012 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		580334462D64876D00AB62B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5803345B2D64876E00AB62B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580334652D64876E00AB62B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580334402D64876D00AB62B9 = {
+			isa = PBXGroup;
+			children = (
+				5803344B2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */,
+				580334612D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests */,
+				5803346B2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests */,
+				5803344A2D64876D00AB62B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5803344A2D64876D00AB62B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				580334492D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS.app */,
+				5803345E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.xctest */,
+				580334682D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5803344B2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				580334882D648C6A00AB62B9 /* JsonFile */,
+				5803347B2D64889A00AB62B9 /* CitiesList */,
+				589CD0242D649FD7008BC012 /* DetailView */,
+				5803344C2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOSApp.swift */,
+				5803344E2D64876D00AB62B9 /* ContentView.swift */,
+				580334502D64876E00AB62B9 /* Assets.xcassets */,
+				580334552D64876E00AB62B9 /* Persistence.swift */,
+				580334572D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodeld */,
+				580334522D64876E00AB62B9 /* Preview Content */,
+			);
+			path = Test_AusCityList_Kishor_iOS;
+			sourceTree = "<group>";
+		};
+		580334522D64876E00AB62B9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				580334532D64876E00AB62B9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		580334612D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				580334622D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.swift */,
+			);
+			path = Test_AusCityList_Kishor_iOSTests;
+			sourceTree = "<group>";
+		};
+		5803346B2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5803346C2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.swift */,
+				5803346E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift */,
+			);
+			path = Test_AusCityList_Kishor_iOSUITests;
+			sourceTree = "<group>";
+		};
+		5803347B2D64889A00AB62B9 /* CitiesList */ = {
+			isa = PBXGroup;
+			children = (
+				580334812D64893D00AB62B9 /* Repository */,
+				5803347E2D6488D400AB62B9 /* View */,
+				5803347D2D6488CA00AB62B9 /* ViewModel */,
+				5803347C2D6488C400AB62B9 /* Model */,
+			);
+			path = CitiesList;
+			sourceTree = "<group>";
+		};
+		5803347C2D6488C400AB62B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5803347F2D64890300AB62B9 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5803347D2D6488CA00AB62B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				580334842D64898A00AB62B9 /* CityViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5803347E2D6488D400AB62B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				580334862D6489B300AB62B9 /* CityListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		580334812D64893D00AB62B9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				580334822D64895100AB62B9 /* CityRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		580334882D648C6A00AB62B9 /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				580334892D648CEB00AB62B9 /* cities.json */,
+			);
+			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		589CD0242D649FD7008BC012 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				589CD0252D649FF5008BC012 /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		580334482D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580334722D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOS" */;
+			buildPhases = (
+				580334452D64876D00AB62B9 /* Sources */,
+				580334462D64876D00AB62B9 /* Frameworks */,
+				580334472D64876D00AB62B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test_AusCityList_Kishor_iOS;
+			productName = Test_AusCityList_Kishor_iOS;
+			productReference = 580334492D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5803345D2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580334752D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOSTests" */;
+			buildPhases = (
+				5803345A2D64876E00AB62B9 /* Sources */,
+				5803345B2D64876E00AB62B9 /* Frameworks */,
+				5803345C2D64876E00AB62B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580334602D64876E00AB62B9 /* PBXTargetDependency */,
+			);
+			name = Test_AusCityList_Kishor_iOSTests;
+			productName = Test_AusCityList_Kishor_iOSTests;
+			productReference = 5803345E2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		580334672D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580334782D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOSUITests" */;
+			buildPhases = (
+				580334642D64876E00AB62B9 /* Sources */,
+				580334652D64876E00AB62B9 /* Frameworks */,
+				580334662D64876E00AB62B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5803346A2D64876E00AB62B9 /* PBXTargetDependency */,
+			);
+			name = Test_AusCityList_Kishor_iOSUITests;
+			productName = Test_AusCityList_Kishor_iOSUITests;
+			productReference = 580334682D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		580334412D64876D00AB62B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					580334482D64876D00AB62B9 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					5803345D2D64876E00AB62B9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 580334482D64876D00AB62B9;
+					};
+					580334672D64876E00AB62B9 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 580334482D64876D00AB62B9;
+					};
+				};
+			};
+			buildConfigurationList = 580334442D64876D00AB62B9 /* Build configuration list for PBXProject "Test_AusCityList_Kishor_iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 580334402D64876D00AB62B9;
+			productRefGroup = 5803344A2D64876D00AB62B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				580334482D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */,
+				5803345D2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests */,
+				580334672D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580334472D64876D00AB62B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5803348A2D648CEB00AB62B9 /* cities.json in Resources */,
+				580334542D64876E00AB62B9 /* Preview Assets.xcassets in Resources */,
+				580334512D64876E00AB62B9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5803345C2D64876E00AB62B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580334662D64876E00AB62B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		580334452D64876D00AB62B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580334562D64876E00AB62B9 /* Persistence.swift in Sources */,
+				589CD0262D649FF5008BC012 /* DetailView.swift in Sources */,
+				580334802D64890300AB62B9 /* City.swift in Sources */,
+				580334832D64895100AB62B9 /* CityRepository.swift in Sources */,
+				5803344F2D64876D00AB62B9 /* ContentView.swift in Sources */,
+				580334592D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodeld in Sources */,
+				580334872D6489B300AB62B9 /* CityListView.swift in Sources */,
+				580334852D64898A00AB62B9 /* CityViewModel.swift in Sources */,
+				5803344D2D64876D00AB62B9 /* Test_AusCityList_Kishor_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5803345A2D64876E00AB62B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580334632D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580334642D64876E00AB62B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5803346D2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITests.swift in Sources */,
+				5803346F2D64876E00AB62B9 /* Test_AusCityList_Kishor_iOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		580334602D64876E00AB62B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580334482D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */;
+			targetProxy = 5803345F2D64876E00AB62B9 /* PBXContainerItemProxy */;
+		};
+		5803346A2D64876E00AB62B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580334482D64876D00AB62B9 /* Test_AusCityList_Kishor_iOS */;
+			targetProxy = 580334692D64876E00AB62B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		580334702D64876E00AB62B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		580334712D64876E00AB62B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		580334732D64876E00AB62B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Test_AusCityList_Kishor_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		580334742D64876E00AB62B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Test_AusCityList_Kishor_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		580334762D64876E00AB62B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_AusCityList_Kishor_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_AusCityList_Kishor_iOS";
+			};
+			name = Debug;
+		};
+		580334772D64876E00AB62B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test_AusCityList_Kishor_iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test_AusCityList_Kishor_iOS";
+			};
+			name = Release;
+		};
+		580334792D64876E00AB62B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Test_AusCityList_Kishor_iOS;
+			};
+			name = Debug;
+		};
+		5803347A2D64876E00AB62B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5N725XH62M;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shiv.om.Test-AusCityList-Kishor-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Test_AusCityList_Kishor_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		580334442D64876D00AB62B9 /* Build configuration list for PBXProject "Test_AusCityList_Kishor_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580334702D64876E00AB62B9 /* Debug */,
+				580334712D64876E00AB62B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580334722D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580334732D64876E00AB62B9 /* Debug */,
+				580334742D64876E00AB62B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580334752D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580334762D64876E00AB62B9 /* Debug */,
+				580334772D64876E00AB62B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580334782D64876E00AB62B9 /* Build configuration list for PBXNativeTarget "Test_AusCityList_Kishor_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580334792D64876E00AB62B9 /* Debug */,
+				5803347A2D64876E00AB62B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		580334572D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				580334582D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodel */,
+			);
+			currentVersion = 580334582D64876E00AB62B9 /* Test_AusCityList_Kishor_iOS.xcdatamodel */;
+			path = Test_AusCityList_Kishor_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 580334412D64876D00AB62B9 /* Project object */;
+}

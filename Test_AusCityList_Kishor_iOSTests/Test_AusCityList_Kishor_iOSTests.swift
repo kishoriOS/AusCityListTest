@@ -10,7 +10,7 @@ import XCTest
 
 class MockCityRepository: CityRepositoryProtocol {
     func fetchCities() async throws -> [City] {
-        return [City(city: "Sydney", admin_name: "New South Wales")]
+        return [City(city: "Sydney", admin_name: "New South Wales", population: "0", iso2: "AU")]
     }
 }
 
@@ -21,8 +21,15 @@ final class Test_AusCityList_Kishor_iOSTests: XCTestCase {
         
         await viewModel.refreshData()
         
-        XCTAssertFalse(viewModel.citiesByState.isEmpty)
-        XCTAssertEqual(viewModel.citiesByState["New South Wales"]?.first?.city, "Sydney")
+        // Access citiesByState inside MainActor.run
+        await MainActor.run {
+            XCTAssertFalse(viewModel.citiesByState.isEmpty)
+            XCTAssertEqual(viewModel.citiesByState["New South Wales"]?.first?.city, "Sydney")
+            
+            /*------ Cross check with city name... for failed the test cases.------------*/
+           // XCTAssertEqual(viewModel.citiesByState["New South Wales"]?.first?.city, "Surat", "This test should fail because Sydney is expected.")
+            /*------------------------------------- End ---------------------------------*/
+        }
     }
 }
 
